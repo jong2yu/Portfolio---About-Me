@@ -1,0 +1,51 @@
+@import "common.scss";
+
+
+
+body {
+  .box {
+    width: 60rem;height: 66rem;
+    background: rgb(233, 233, 233);
+    border-radius: 1.6rem;
+    box-shadow: 0 0 .3rem .3rem rgb(233, 233, 233);
+    @include pac($top:56%);
+
+    h2 {
+      font: {
+        size: 4rem;
+        weight: 600;
+      }
+      text-align: center;
+      margin:6rem 0;
+    }
+
+    form {
+      @include gc;
+      .size {
+        width: 40rem;
+        height: 4rem;
+      }
+
+      .message {
+        height: 16rem;
+      }
+
+      input {
+        border-radius: .6rem;
+        margin-bottom:3rem;
+        padding:1.6rem;
+
+      }
+
+      button {
+        border-radius: .6rem;
+        background: rgb(201, 201, 201);
+      }
+      button:hover {
+        background: rgb(163, 163, 163);
+        color:white;
+        cursor:pointer;
+      }
+    }
+  }
+}

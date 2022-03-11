@@ -1,0 +1,96 @@
+@import "common.scss";
+
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  section {
+    .wrap {
+      width: 60vw;
+      height: 80vh;
+      margin: auto;
+      position: relative;
+
+      a {
+        .monitor {
+          width: 83rem;
+          height: 51rem;
+          @include pac;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .phone {
+          width: 25rem;
+          @include pac($left:80%, $top:70%);
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  #one {
+    .wrap {
+      a {
+        .monitor {
+          background: url(../images/p-caseon.jpg) center 3rem / 78rem no-repeat;
+          transition:3s;
+        }
+      }
+
+      a:hover {
+        .monitor {
+          background-position: center -30rem;
+        }
+      }
+    }
+  }
+
+
+  #two {
+    margin: 15rem auto;
+    .wrap {
+      a {
+        .monitor {
+          background: url(../images/p-wine.jpg) center 3rem / 78rem no-repeat;
+          transition:3s;
+        }
+      }
+
+      a:hover {
+        .monitor {
+          background-position: center -35rem;
+        }
+      }
+    }
+  }
+
+
+  #three {
+    .wrap {
+      a {
+        .monitor {
+          background: url(../images/p-harrypotter.jpg) center 3rem / 78rem no-repeat;
+          transition:3s;
+        }
+
+        // .phone {
+        //   background: url(../images/p-harrypotter.jpg) center 1rem / 16rem no-repeat;
+        // }
+      }
+
+      a:hover {
+        .monitor {
+          background-position: center -30rem;
+        }
+      }
+    }
+  }
+}

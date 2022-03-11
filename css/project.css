@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+html body {
+  overflow-x: hidden;
+  background: radial-gradient(circle, #e4e4e4 0%, #6a6a6a 100%);
+  background-attachment: fixed;
+}
+
+html body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10rem;
+  position: relative;
+  border-bottom: 1px solid gray;
+}
+
+html body header .logo li {
+  margin: 0 16rem;
+}
+
+html body header .logo li a img {
+  width: 6rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+html body header .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 0;
+  margin: 0 16rem;
+}
+
+html body header .wrap ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  line-height: 10rem;
+}
+
+html body header .wrap ul li {
+  margin: 0 1.6rem;
+}
+
+html body header .wrap ul li a {
+  color: black;
+}
+
+html body header .wrap ul li a > img {
+  height: 4rem;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+html body header .wrap .menu li a {
+  position: relative;
+}
+
+html body header .wrap .menu li a:after,
+html body header .wrap .menu li a:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: .1rem;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+html body header .wrap .menu li a:after {
+  left: 50%;
+}
+
+html body header .wrap .menu li a:before {
+  right: 50%;
+}
+
+html body header .wrap .menu li a:hover:after,
+html body header .wrap .menu li a:hover:before {
+  width: 50%;
+}
+
+html body header .wrap .link {
+  margin-left: 6rem;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body section .wrap {
+  width: 60vw;
+  height: 80vh;
+  margin: auto;
+  position: relative;
+}
+
+body section .wrap a .monitor {
+  width: 83rem;
+  height: 51rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body section .wrap a .monitor img {
+  width: 100%;
+}
+
+body section .wrap a .phone {
+  width: 25rem;
+  position: absolute;
+  left: 80%;
+  top: 70%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body section .wrap a .phone img {
+  width: 100%;
+}
+
+body #one .wrap a .monitor {
+  background: url(../images/p-caseon.jpg) center 3rem/78rem no-repeat;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+body #one .wrap a:hover .monitor {
+  background-position: center -30rem;
+}
+
+body #two {
+  margin: 15rem auto;
+}
+
+body #two .wrap a .monitor {
+  background: url(../images/p-wine.jpg) center 3rem/78rem no-repeat;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+body #two .wrap a:hover .monitor {
+  background-position: center -35rem;
+}
+
+body #three .wrap a .monitor {
+  background: url(../images/p-harrypotter.jpg) center 3rem/78rem no-repeat;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+body #three .wrap a:hover .monitor {
+  background-position: center -30rem;
+}
+/*# sourceMappingURL=project.css.map */
