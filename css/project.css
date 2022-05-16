@@ -143,6 +143,33 @@ body section .wrap a .phone img {
   width: 100%;
 }
 
+body #wedding .wrap a .monitor {
+  background: url(../images/p-wedding.png) center 3rem/80rem no-repeat;
+  border-radius: 30px;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+body #wedding .wrap a .phone {
+  background: url(../images/p-wedding-mobile.png) center 1rem/16rem no-repeat;
+  background-size: 16rem auto;
+  -webkit-transition: 3s;
+  transition: 3s;
+  border: 1px solid #000;
+}
+
+body #wedding .wrap a:hover .monitor {
+  background-position: center -30rem;
+}
+
+body #wedding .wrap a:hover .phone {
+  background-position: center -10rem;
+}
+
+body #one {
+  margin: 15rem auto;
+}
+
 body #one .wrap a .monitor {
   background: url(../images/p-caseon.jpg) center 3rem/78rem no-repeat;
   -webkit-transition: 3s;

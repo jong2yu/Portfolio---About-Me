@@ -36,12 +36,43 @@ body {
     }
   }
 
+  #wedding {
+    .wrap {
+      a {
+        .monitor {
+          background: url(../images/p-wedding.png) center 3rem / 80rem no-repeat;
+          border-radius: 30px;
+          transition: 3s;
+        }
+
+        .phone { //png fix
+          background: url(../images/p-wedding-mobile.png) center 1rem / 16rem no-repeat;
+          background-size: 16rem auto;
+          transition: 3s;
+          border: 1px solid #000;
+        }
+      }
+
+      a:hover {
+        .monitor {
+          background-position: center -30rem;
+        }
+
+        .phone {
+          background-position: center -10rem;
+        }
+      }
+    }
+  }
+
   #one {
+    margin: 15rem auto;
+
     .wrap {
       a {
         .monitor {
           background: url(../images/p-caseon.jpg) center 3rem / 78rem no-repeat;
-          transition:3s;
+          transition: 3s;
         }
       }
 
@@ -56,11 +87,12 @@ body {
 
   #two {
     margin: 15rem auto;
+
     .wrap {
       a {
         .monitor {
           background: url(../images/p-wine.jpg) center 3rem / 78rem no-repeat;
-          transition:3s;
+          transition: 3s;
         }
       }
 
@@ -78,7 +110,7 @@ body {
       a {
         .monitor {
           background: url(../images/p-harrypotter.jpg) center 3rem / 78rem no-repeat;
-          transition:3s;
+          transition: 3s;
         }
 
         // .phone {
