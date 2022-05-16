@@ -143,6 +143,10 @@ body section .wrap a .phone img {
   width: 100%;
 }
 
+body #wedding .wrap {
+  position: relative;
+}
+
 body #wedding .wrap a .monitor {
   background: url(../images/p-wedding.png) center 3rem/80rem no-repeat;
   border-radius: 30px;
@@ -151,11 +155,18 @@ body #wedding .wrap a .monitor {
 }
 
 body #wedding .wrap a .phone {
-  background: url(../images/p-wedding-mobile.png) center 1rem/16rem no-repeat;
-  background-size: 16rem auto;
+  width: 16rem;
+  height: 32rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url(../images/p-wedding-mobile.png) center 1rem/14rem no-repeat;
+  background-size: 14rem auto;
+  border-radius: 4rem;
+  -webkit-box-shadow: 0 15px 30px 0 black;
+          box-shadow: 0 15px 30px 0 black;
   -webkit-transition: 3s;
   transition: 3s;
-  border: 1px solid #000;
 }
 
 body #wedding .wrap a:hover .monitor {
@@ -163,7 +174,7 @@ body #wedding .wrap a:hover .monitor {
 }
 
 body #wedding .wrap a:hover .phone {
-  background-position: center -10rem;
+  background-position: center -11rem;
 }
 
 body #one {

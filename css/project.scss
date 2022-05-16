@@ -38,6 +38,7 @@ body {
 
   #wedding {
     .wrap {
+      position: relative;
       a {
         .monitor {
           background: url(../images/p-wedding.png) center 3rem / 80rem no-repeat;
@@ -46,10 +47,15 @@ body {
         }
 
         .phone { //png fix
-          background: url(../images/p-wedding-mobile.png) center 1rem / 16rem no-repeat;
-          background-size: 16rem auto;
+          width: 16rem;
+          height:32rem;
+          position: absolute;
+          right: 0;bottom: 0;
+          background: url(../images/p-wedding-mobile.png) center 1rem / 14rem no-repeat;
+          background-size: 14rem auto;
+          border-radius: 4rem;
+          box-shadow: 0 15px 30px 0 black;
           transition: 3s;
-          border: 1px solid #000;
         }
       }
 
@@ -59,7 +65,7 @@ body {
         }
 
         .phone {
-          background-position: center -10rem;
+          background-position: center -11rem;
         }
       }
     }
